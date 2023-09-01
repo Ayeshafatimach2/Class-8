@@ -16,6 +16,14 @@ _n = _n.filter((removeNeg) => {
     }
 });
 console.log(_n);
+//EXAMPLE-3
+let negNum = [313, 34, -2342, -24, 2424, 242, -5435, -463, 633, -53];
+negNum = negNum.filter((_remove) => {
+    if (_remove >= 0) {
+        return negNum;
+    }
+});
+console.log(negNum);
 //Write a program that uses filter to remove all positive numbers from an array of numbers.
 //EMAMPLE-1
 let numb = [9423, -31, 32, -123, -2331, -313, 54];
@@ -33,3 +41,10 @@ n2 = n2.filter((remove) => {
     }
 });
 console.log(n2);
+var positiveNumber = [284, -242, 2, -242, -242, 3242, 24, -542, 432];
+positiveNumber = positiveNumber.filter((removeNumber) => {
+    if (removeNumber <= 0) {
+        return positiveNumber;
+    }
+});
+console.log(positiveNumber);

@@ -11,6 +11,8 @@ num = num.filter((removeNegative: number) => {
 });
 console.log(num);
 
+
+
 //EXAMPLE-2
 let _n: number[] = [43, 53, -543, -64, -112, 647, 342, 3 - 32, 63];
 _n = _n.filter((removeNeg: number) => {
@@ -19,6 +21,17 @@ _n = _n.filter((removeNeg: number) => {
     }
 })
 console.log(_n);
+
+//EXAMPLE-3
+let negNum: number[] = [313, 34, -2342, -24, 2424, 242, -5435, -463, 633, -53];
+negNum = negNum.filter((_remove: number) => {
+    if (_remove >= 0) {
+        return negNum
+
+    }
+})
+console.log(negNum);
+
 
 
 //Write a program that uses filter to remove all positive numbers from an array of numbers.
@@ -42,3 +55,15 @@ n2 = n2.filter((remove: number) => {
     }
 })
 console.log(n2);
+
+
+
+var positiveNumber: number[] = [284, -242, 2, -242, -242, 3242, 24, -542, 432];
+positiveNumber = positiveNumber.filter((removeNumber: number) => {
+    if (removeNumber <= 0) {
+        return positiveNumber;
+
+    }
+})
+console.log(positiveNumber);
+

@@ -14,3 +14,10 @@ let multiply2 = number2.map((entry2) => {
     return entry2 * 5;
 })
 console.log(multiply2);
+
+//Give an array of numbers [1,2,3,4,5], use the map method to create a new array where each number is multiplied by 15.
+let number3: number[] = [1, 2, 3, 4, 5];
+let multiply10 = number3.map((entre) => {
+    return entre * 15;
+})
+console.log(multiply10);
